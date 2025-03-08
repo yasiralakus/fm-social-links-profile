@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a { text-decoration: none; }
+
+li, summary { list-style: none;}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.2;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Poppins', sans-serif;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+#root, #__next {
+    isolation: isolate;
+}
+
+/* hazır kodlarım */
+
+.full-page {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #141414;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-box {
+    background-color: #1F1F1F;
+    width: 385px;
+    height: 611px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding: 40px;
+    border-radius: 12px;
+    > img {
+        width: 88px;
+        height: 88px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    > p {
+        font-size: 13px;
+        color: #FFF;
+        letter-spacing: 1px;
+        font-weight: 300;
+        text-align: center;
+    }
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    width: 100%;
+    > a {
+        padding: 12px;
+        background-color: #333333;
+        width: 100%;
+        font-size: 14px;
+        color: #FFF;
+        text-align: center;
+        letter-spacing: 0.5px;
+        border-radius: 8px;
+        font-weight: 500;
+        transition: all .3s;
+    }
+    > a:hover {
+        background-color: #C4F82A;
+        color: #333333;
+    }
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    > h3{
+        font-size: 24px;
+        letter-spacing: 1px;
+        line-height: 1;
+        color: #FFF;
+        font-weight: 500;
+    }
+    > h5 {
+        color: #C4F82A;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+}
+
+@media (width < 440px) {
+    .full-page {
+        padding: 24px;
+    }
+
+    .main-box {
+        padding: 24px;
+    }
+}
