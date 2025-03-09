@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    line-height: 1.5;
 }
 
 a { text-decoration: none; }
@@ -17,7 +18,7 @@ li, summary { list-style: none;}
 body {
     line-height: 1.2;
     -webkit-font-smoothing: antialiased;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
 img, picture, video, canvas, svg {
@@ -70,7 +71,6 @@ p, h1, h2, h3, h4, h5, h6 {
         letter-spacing: 1px;
         font-weight: 300;
         text-align: center;
-        height: 21px;
     }
 }
 
@@ -132,5 +132,6 @@ p, h1, h2, h3, h4, h5, h6 {
 
     .main-box {
         padding: 24px;
+        height: 579px;
     }
 }

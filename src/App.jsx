@@ -13,7 +13,7 @@ export default function App() {
                 <h5>Istanbul, Turkiye</h5>
             </div>
 
-            <p>"Frontend and Mobile App Developer"</p>
+            <p>"Frontend and App Developer"</p>
 
             <div className="social-links">
                 <a href="https://github.com/yasiralakus">GitHub</a>
